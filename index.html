@@ -59,6 +59,18 @@ ul {
 ul li {
     margin-bottom: 10px;
 }
+ /* Style for the button */
+        .custom-button {
+            width: 200px;          /* Adjust the width */
+            height: 60px;          /* Adjust the height */
+            font-size: 18px;       /* Adjust font size */
+            padding: 10px;         /* Adjust padding inside the button */
+            background-color: #0077cc; /* Button background color */
+            color: white;          /* Text color */
+            border: none;          /* Remove default border */
+            border-radius: 8px;    /* Rounded corners */
+            cursor: pointer;       /* Change cursor on hover */
+        }
 
 /* Button styling */
 button {
@@ -90,8 +102,37 @@ button:hover {
     <h2> Overview </h2>
     <p>The <strong>Koenigsegg Jesko Absolut</strong> is a high-performance hypercar designed to break speed records. Developed by the Swedish automaker <em>Koenigsegg</em>, the Jesko Absolut is the culmination of advanced engineering and aerodynamic efficiency. It is intended to be the fastest car Koenigsegg will ever produce, with no plans to surpass its incredible top speed in future models.</p>
 
-    <h2><a href="performance.html">Performance</a></h2>
-   <button onclick="window.location.href='performance.html';">Performance</button>
+
+<style>
+    .custom-button {
+        width: 200px;    /* Width of the button */
+        height: 50px;    /* Height of the button */
+        font-size: 20px; /* Font size inside the button */
+        padding: 0px;   /* Space inside the button */
+    }
+
+    #button1 {
+            top:220px;
+            left:20px;
+        }
+
+    #button2 {
+            top: 200px;
+            left: 150px;
+        }
+
+    #button3 {
+            top: 300px;
+            left: 250px;
+        }
+</style>
+
+
+  <br> 
+  <br>
+  
+  <button class="custom-button" id="button1" onclick="window.location.href='performance.html';">Performance</button>
+
     <p>At the heart of the Jesko Absolut is a 5.0-liter twin-turbocharged V8 engine capable of producing a staggering <strong>1,600 horsepower</strong> when running on E85 biofuel. The car’s lightweight carbon fiber structure and advanced aerodynamics allow it to achieve speeds projected to exceed <strong>500 km/h (310 mph)</strong>.</p>
     <ul>
         <li>Engine: 5.0L twin-turbo V8</li>
@@ -129,4 +170,3 @@ button:hover {
 
 </body>
 </html>
-
