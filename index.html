@@ -1,114 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-     <title>Koenigsegg Jesko Absolut - The Ultimate Hypercar</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tab Content Toggle</title>
+    <style>
+        /* Basic styling for tabs and content sections */
+        .tabs {
+            display: flex;
+            cursor: pointer;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
 
+        .tab {
+            margin-right: 20px;
+            padding: 10px 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .tab.active {
+            background-color: #e0f7fa;
+            font-weight: bold;
+        }
+
+        .content-section {
+            display: none;
+        }
+
+        .content-section.active {
+            display: block;
+        }
+    </style>
 </head>
 <body>
-<style>
-/* Basic reset to remove default margin and padding */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
-/* Body styling */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
-    color: #333;
-    line-height: 1.6;
-    padding: 20px;
-}
-
-/* Header styling */
-h1 {
-    text-align: center;
-    font-size: 2.5em;
-    color: #222;
-    margin-bottom: 20px;
-}
-
-/* Styling for section headers with links */
-h2 a {
-    color: #0077cc;
-    text-decoration: none;
-    font-size: 1.8em;
-    display: block;
-    margin: 20px 0;
-}
-
-h2 a: hover {
-    color: #005fa3;
-    text-decoration: underline;
-}
-
-/* Paragraph styling */
-p {
-    font-size: 1.1em;
-    margin-bottom: 15px;
-}
-
-/* List styling */
-ul {
-    margin-left: 20px;
-    margin-bottom: 20px;
-}
-
-ul li {
-    margin-bottom: 10px;
-}
- /* Style for the button */
-        .custom-button {
-            width: 200px;          /* Adjust the width */
-            height: 60px;          /* Adjust the height */
-            font-size: 18px;       /* Adjust font size */
-            padding: 10px;         /* Adjust padding inside the button */
-            background-color: #0077cc; /* Button background color */
-            color: white;          /* Text color */
-            border: none;          /* Remove default border */
-            border-radius: 8px;    /* Rounded corners */
-            cursor: pointer;       /* Change cursor on hover */
-        }
-           custom-button hover{background-color: #005fa3;}
-
-            #button1 {
-            position: absolute;
-            top:250px;
-            left:20px;
-        }
-
-            #button2 {
-            position: absolute;
-            top: 350px;
-            left: 250px;
-        }
-
-            #button3 {
-            top: 300px;
-            left: 250px;
-        }
-
-</style> 
+    <h1>Formula 1 Mercedes Team</h1>
     
-    <h1>Koenigsegg Jesko Absolut</h1>
+    <!-- Tabs -->
+    <div class="tabs">
+        <div id="tab-Hamilton" class="tab active" onclick="showContent('Hamilton')">Lewis Hamilton</div>
+        <div id="tab-Russel" class="tab" onclick="showContent('Russel')">George Russel</div>
+    </div>
 
-    <h2> Overview </h2>
-    <p>The <strong>Koenigsegg Jesko Absolut</strong> is a high-performance hypercar designed to break speed records. Developed by the Swedish automaker <em>Koenigsegg</em>, the Jesko Absolut is the culmination of advanced engineering and aerodynamic efficiency. It is intended to be the fastest car Koenigsegg will ever produce, with no plans to surpass its incredible top speed in future models.</p>
+    <!-- Content Sections -->
+    <div id="content-Hamilton" class="content-section active">
+        <h2>Lewis Hamilton</h2>
+        <p>Content for Hamilton. Includes options like Canva Free, Canva Pro, and Canva Teams.</p>
+        <!-- Add detailed content for Individuals and Teams here -->
+    </div>
 
+    <div id="content-Russel" class="content-section">
+        <h2>George Russel</h2>
+        <p>Content for Russel. Includes options like Teachers, Schools and Districts, and Canva for Campus.</p>
+        <!-- Add detailed content for Education here -->
+    </div>
 
+    <script>
+        // JavaScript function to toggle content based on the selected tab
+        function showContent(section) {
+            // Remove active class from all tabs and content sections
+            document.querySelectorAll('.tab').forEach(tab => tab.classList.remove('active'));
+            document.querySelectorAll('.content-section').forEach(section => section.classList.remove('active'));
 
-
-  <br> 
-  <br>
-  
-  <button class="custom-button" id="button1" onclick="window.location.href='performance.html';">Performance</button>
-  <button class="custom-button" id="button2"> zobry </button>
-
-    <h2><a href="design.html">Design</a></h2>
-    <h2><a href="specifications.html">Specifications</a></h2>
-    <h2><a href="gallery.html">Gallery</a></h2>
+            // Add active class to the selected tab and content section
+            document.getElementById(`tab-${section}`).classList.add('active');
+            document.getElementById(`content-${section}`).classList.add('active');
+        }
+    </script>
 
 </body>
 </html>
