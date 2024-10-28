@@ -60,13 +60,12 @@ h2 {
 
 /* Content Section */
 .content-section {
-    width: 800px;
-    max-width: 75%;
-    margin: 0 auto;
+    max-width:90%;
     padding: 20px;
-    background-color: #fff;
+    margin: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .content-section img {
