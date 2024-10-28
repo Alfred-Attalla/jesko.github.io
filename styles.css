@@ -60,7 +60,8 @@ h2 {
 
 /* Content Section */
 .content-section {
-    max-width: 800px;
+    width: 800px;
+    max-width: 75%;
     margin: 0 auto;
     padding: 20px;
     background-color: #fff;
