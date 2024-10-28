@@ -13,6 +13,8 @@
             padding: 10px;
             margin-bottom: 20px;
             border-radius: 8px;
+            justify-content: center;
+            gap: 10px;
         }
 
         .tab {
@@ -28,8 +30,15 @@
             background-color: white;
             color: black;
             font-weight: bold;
+            background-color: #fff;
+            color: #5f87a2;
+            border: 1px solid #5f87a2;
         }
-
+       
+        .tab:hover {
+         background-color: #3c5a6e;
+        }
+        
         .content-section {
             display: none;
         }
@@ -40,7 +49,25 @@
         .image {
             float: right; /* or right */
             margin-left: 15px; /* space between image and text */
+            width: 80%;
+            max-width: 600px;
+            border-radius: 8px;
+            margin-top: 10px;
         }
+
+        .overview {
+          background-color: #e0f7fa; /* Light background color for the overview section */
+          padding: 20px;
+          border-radius: 8px;
+          margin-bottom: 20px;
+          text-align: center;
+        }
+
+        .overview h2 {
+            position: relative;
+            left: 0;
+        }
+        
     </style>
     
     </style>
@@ -54,11 +81,15 @@
         <h1>Koenigsegg Jesko Absolute</h1>
     </header>
 
-   <h2 style="position: relative; top: 0px; left: 50px;">Overview</h2>
-        <img src="overview.jpg" alt="jesko absolut" class= "image">
+    <div class="overview">
+        <h2>Overview</h2>
+        <img src="overview.jpg" alt="jesko absolut" class="image">
         <p>The Koenigsegg Jesko Absolut is a high-performance hypercar designed to break speed records. 
             Developed by the Swedish automaker Koenigsegg, the Jesko Absolut is the culmination of advanced engineering and aerodynamic efficiency. 
             It is intended to be the fastest car Koenigsegg will ever produce, with no plans to surpass its incredible top speed in future models..
+        </p>
+    </div>
+    
     <!-- Tabs -->
     <div class="tabs">
         <div id="tab-Performance" class="tab active" onclick="showContent('Performance')">Performance</div>
