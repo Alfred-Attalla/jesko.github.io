@@ -1,21 +1,95 @@
-body {
-         background-color: #B2FFFF;
-         font-family: Arial, sans-serif;
-         color: #333;
-         margin: 0;
-         padding: 0;
-       }
-        header {
-        background-color: #000; /* Black background for header */
-        padding: 20px 0;
-        text-align: center;
-       }
 
-        header h1 {
-        color: #fff; /* White text color for better contrast on black */
-        margin: 0;
-        font-size: 2.5em;
-       }
+        /* Basic styling for tabs and content sections */
+ .tabs {
+   display: flex;
+   cursor: pointer;  
+   padding: 10px;
+   margin-bottom: 20px;
+   border-radius: 8px;
+   justify-content: center;
+    gap: 10px;
+}
+
+ .tab {
+    margin-right: 20px;
+    padding: 10px 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: #396087;
+    color: white;
+ }
+
+.tab.active {
+ background-color: white;
+ color: black;
+ ont-weight: bold;
+ background-color: #fff;
+ olor: #5f87a2;
+ border: 1px solid #5f87a2;
+}
+       
+.tab:hover {
+ background-color: #3c5a6e;
+}
+        
+.content-section {
+ display: none;
+}
+
+.content-section.active {
+ display: block;
+}
+
+.image {
+ float: right; /* or right */
+ margin-left: 15px; /* space between image and text */
+ width: 80%;
+ max-width: 600px;
+ border-radius: 8px;
+ margin-top: 10px;
+display: block; /* Centers the image within the div */
+}
+
+ .overview {
+  background-color: #e0f7fa; /* Light background color for the overview section */
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.content-section {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+}
+
+
+
+/*zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz*/
+body {
+ background-color: #B2FFFF;
+ font-family: Arial, sans-serif;
+ color: #333;
+ margin: 0;
+ padding: 0;
+}
+
+header {
+background-color: #000; /* Black background for header */
+padding: 20px 0;
+text-align: center;
+}
+
+header h1 {
+color: #fff; /* White text color for better contrast on black */
+margin: 0;
+font-size: 2.5em;
+}
 
 h1 {
     font-size: 2.5em;
