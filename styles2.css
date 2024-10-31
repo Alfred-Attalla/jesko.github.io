@@ -70,12 +70,11 @@ a:hover {
     display: flex;
     justify-content: space-around;
     margin-top: 30px;
-    margin-down: 30px;
 }
 
 /* Photo styling */
 .photo {
-    width: 30%;
+    width: 45%;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
